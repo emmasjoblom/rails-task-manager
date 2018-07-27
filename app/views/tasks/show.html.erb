@@ -1,0 +1,18 @@
+
+<p><%= link_to 'Edit this task', edit_task_path(@task) %></p>
+
+<h1><%= @task.title %></h1>
+<h2><%= @task.details %></h2>
+
+
+<ul>
+  <li>
+  <p class="fas fa-square"> This task is not completed yet</p>
+  <i class="fas fa-trash-alt"></i>
+  </li>
+</ul>
+
+
+<p><%= link_to 'Back to list', tasks_path %></p>
+<%= link_to 'Delete', tasks_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" } %>
+

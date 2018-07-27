@@ -1,0 +1,3 @@
+<h1> Update task</h1>
+<%= render 'form', task: @task %>
+<p><%= link_to 'Delete', delete_path(@task), method: :delete, data: { confirm: "Are you sure?" } %></p>
